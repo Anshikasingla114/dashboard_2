@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard - Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <!-- Navbar -->
+        <nav>
+            <h1>🎓 Student Dashboard</h1>
+            <div class="nav-buttons">
+                <a href="{% url 'login' %}">Login</a>
+                <a href="{% url 'register' %}">Register</a>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <div class="hero">
+            <h2>📊 The All-In-One Academic Dashboard</h2>
+            <p>Track your scores, monitor subject progress, and view performance insights — all in one place.</p>
+            <a href="{% url 'register' %}" class="cta-btn">Get Started</a>
+        </div>
+    
+    <footer>© 2025 Student Dashboard | Designed with ❤️</footer>
+</body>
+</html>
